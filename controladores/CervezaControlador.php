@@ -93,10 +93,8 @@ class CervezaControlador
                 $carpeta2 = $carpeta;
                 if ($tipo != 'image/jpg' && $tipo != 'image/png' && $tipo != 'image/jpeg') {
                     $booleano = false;
-                    // break;
                 } else if ($tamaño > 1024 * 1024 * 10) {
                     $booleano = false;
-                    // break;
                 } else {
                     $nueva_ruta = $carpeta2 . $nombre;
                     move_uploaded_file($ruta, $nueva_ruta);
